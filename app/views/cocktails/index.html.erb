@@ -1,0 +1,7 @@
+<h1>Cocktails</h1>
+<% @cocktails.each do |cocktail| %>
+  <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+<% end %>
+
+<h2><%= link_to "See Cocktails", cocktails_path %></h2>
+<h2><%= link_to "Add a Cocktail", new_cocktail_path %></h2>
