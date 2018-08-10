@@ -14,22 +14,20 @@
   <body>
     <div class="navbar-wagon">
   <!-- Logo -->
-  <a href="/" class="navbar-wagon-brand">
-    <%= image_tag "bluelagoon.png" %>
-  </a>
+  <%= link_to image_tag("bluelagoon.png"), cocktails_path, class: "navbar-wagon-brand" %>
+
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Cocktails</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Add a Cocktail</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Add a Dose</a>
+    <%= link_to "Cocktails", cocktails_path, class: "navbar-wagon-item navbar-wagon-link"%>
+    <%= link_to "Add a Cocktail", new_cocktail_path, class: "navbar-wagon-item navbar-wagon-link"%>
   <!-- Dropdown appearing on mobile only -->
   <div class="navbar-wagon-item">
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Coctails</a></li>
+        <li><a href="#">Cocktails</a></li>
         <li><a href="#">Doses</a></li>
       </ul>
     </div>
@@ -43,3 +41,5 @@
     <%= yield %>
   </body>
 </html>
+
+

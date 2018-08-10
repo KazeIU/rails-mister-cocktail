@@ -1,15 +1,77 @@
 <div class="banner">
   <div class="banner-content">
-    <h1>All the Cocktails</h1>
-    <p>Drink with us</p>
-    <a class="btn btn-primary btn-lg">Start now</a>
+    <h1>Personalized Cocktails</h1>
+    <p>Enjoy your favorite drinks</p>
+    <a href="#cocktail-list" class="btn btn-primary btn-lg">Cocktail List</a>
   </div>
 </div>
+<div id="cocktail-list" class="cocktail-list-head text-center">
+        <h2>Cocktails</h2>
+</div>
 
-<h1>Cocktails</h1>
-<% @cocktails.each do |cocktail| %>
-  <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
-<% end %>
+<div class="container">
+  <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div style="margin: 20px">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url();">
+          <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2>Mojito</h2>
+          </div>
+          <a class="card-link" href="#" ></a>
+        </div>
+        </div>
 
-<h2><%= link_to "See Cocktails", cocktails_path %></h2>
-<h2><%= link_to "Add a Cocktail", new_cocktail_path %></h2>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <div style="margin: 20px">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url();">
+          <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2>Mojito</h2>
+          </div>
+          <a class="card-link" href="#" ></a>
+        </div>
+        </div>
+
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <div style="margin: 20px">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url();">
+          <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2>Mojito</h2>
+          </div>
+          <a class="card-link" href="#" ></a>
+        </div>
+        </div>
+
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div style="margin: 20px">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url();">
+          <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2>Mojito</h2>
+          </div>
+          <a class="card-link" href="#" ></a>
+        </div>
+        </div>
+
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div style="margin: 20px">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url();">
+          <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2>Mojito</h2>
+          </div>
+          <a class="card-link" href="#" ></a>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
